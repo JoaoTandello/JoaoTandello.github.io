@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Arial', 'Times New Roman', Times, serif;
+    background: #0a6a68;
+    line-height: 1.6;
+}
+header{
+    background: #074950;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 0.5rem;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(101, 146, 157);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+nav ul li a:hover{
+    transform: scale(1.05);
+    color: #2c5968;
+    
+}
+section{
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2{
+    color:rgb(16, 126, 141);
+    transition: transform 0.4s ease, color 0.5s;
+    text-align: center;
+}
+.container h2:hover{
+    transform: scale(1.15);
+    color: #49b7b3;
+}
+
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.sobre-mim h2{
+    transition: transform 0.4s ease, color 0.5s;
+}
+.sobre-mim h2:hover{
+    transform: scale(1.15);
+    color: #49b7b3;
+}
+.foto-perfil{
+    width: 300px;
+    height: 250px;
+    border-radius: 20%;
+    border: 0.5px dashed #4d8875;
+}
+.sobre-info{
+    flex: 1;
+}
+.sobre-info h2{
+    margin-bottom: 0.5rem;
+}
+.sobre-info p{
+    font-size: 1rem;
+    color: #4d8875;
+}
+.cards{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    color: rgb(207, 47, 47);
+}
+.card1{
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.card1:hover{
+    transform: scale(1.05);
+    color: #d86e93;
+}
+.card h3{
+    transition: color 0.4s;
+}
+.card1 h3:hover{
+    color: #d86e93;
+}
+.card .biblio{
+    transition: color 0.4s;
+}
+.card .biblio:hover{
+    color: rgb(207, 47, 47);
+}
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.hobby{
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.hobby:hover{
+    transform: scale(1.05);
+}
+.f{
+    font-weight: 600;
+    transition: color 0.4s ease;
+}
+.hobby .f:hover{
+    color: #0a6a68;
+}
+.hobby i{
+    font-size: 25px;
+    color:#0a6a68;
+    transition: color 0.4s linear;
+}
+.hobby i:hover{
+    color: #47a2a1;
+}
+.foto-amor{
+    height: 100px;
+    width: 100px;
+    border-radius: 80%;
+}
+.foto-biblio{
+    height: 100px;
+    width: 100px;
+    border-radius: 80%;
+}
+
+.sobre{
+    color: #4d8875;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #8fbcbb;
+  border-left: 5px solid #0a6a68;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.form:hover{
+    transform: scale(1.02);
+}
+
+.contact h2{
+    color: #4d8875;
+    text-align: center;
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.insta{
+    color: #2c5968;
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 35%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.email{
+    color: #2c5968;
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 35%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.telefone{
+    color: #2c5968;
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 35%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.github{
+    color: #2c5968;
+    background: #f6f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 35%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.fa-github, .fa-instagram, .fa-phone, .fa-envelope{
+    font-size: 25px;
+    color: #2c5968;
+}
+.con:hover{
+    transform: translateY(8px);
+}
