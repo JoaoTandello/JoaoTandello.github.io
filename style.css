@@ -148,6 +148,23 @@ nav a:hover {
     color: var(--text);
 }
 
+.hero-titulo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-imagem {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.sona{
+    animation: pixel 600ms infinite;
+}
+
 .hero-text p {
     color: var(--muted);
     max-width: 600px;
@@ -590,5 +607,17 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 25px;
+    }
+}
+
+@keyframes pixel {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-4px) scale(1.05);
+    }
+    100% {
+        transform: translateY(0) scale(1);
     }
 }
