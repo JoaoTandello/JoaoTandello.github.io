@@ -1,111 +1,257 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Meu Portifólio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-                <h1>Meu portifólio</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#formação">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-        </header>
-        <section id="sobre">
-            <div class="container">
-                <div class="sobre-mim">
-                    <img src="joaoo.png" alt="foto" class="foto-perfil">
-                    <h2 class="sobre">Sobre mim</h2>
-                    <p>Meu nome é João Vitor Franco Tandello, sou de Amparo - SP e tenho 16 anos. Estou cursando o 2º ano do ensino médio no SESI, onde também faço o curso de desenvolvimento de sistemas no SENAI.</p>
-                 
-                </div>
-            </div>
-        </section>
-        <section id="formação">
-            <div class="container">
-                <h2>Certificados</h2>
-                <ul class=>
-                 <section class="form"><p>Ensino Fundamental</p></section>
-                 <section class="form"><p>Curso de inglês iniciante</p></section>
-                 <section class="form"><p>Intersesi - 2024</p></section>
-    </ul>
-            
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Tandello | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">JT</div>
+                <div class="logo-texto">
+                    <h2>João <span>Tandello</span></h2>
+                    <p>Desenvolvimento de Sistemas</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">INÍCIO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#habilidades">HABILIDADES</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span>OLÁ, EU SOU JOÃO TANDELLO</span>
+                    <h1>Desenvolvimento de Sistemas</h1>
+                    <p>
+                        Sou estudante de Desenvolvimento de Sistemas no SESI 356 - SENAI
+                        Atualmente aprendo sobre programação, desenvolvimento web e tecnologia.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="#projetos" class="btn">Meus Projetos</a>
+                        <a href="#contato" class="btn btn-secundario">Entre em contato</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="projetos">
+
+        <section class="sobre" id="sobre">
+            <div class="container sobre-grid">
+
+                <div class="sobre-texto">
+                    <span>SOBRE MIM</span>
+                    <h2>Conheça um pouco sobre mim</h2>
+
+                    <p>
+                        Meu nome é João Tandello e curso Desenvolvimento
+                        de Sistemas no SESI 356 - SENAI.
+                    </p>
+
+                    <p>
+                        Durante o curso venho aprendendo sobre programação,
+                        desenvolvimento de sites, banco de dados e criação de sistemas.
+                    </p>
+                </div>
+
+                <div class="sobre-info">
+                    <div class="info">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <span>Curso</span>
+                            <strong>Desenvolvimento de Sistemas</strong>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-school"></i>
+                        <div>
+                            <span>Instituição</span>
+                            <strong>SESI 356 - SENAI</strong>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <span>Área</span>
+                            <strong>Programação e Tecnologia</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
             <div class="container">
-                <h2 class="sobre">Meus projetos</h2>
+
+                <div class="titulo">
+                    <span>HABILIDADES</span>
+                    <h2>O que estou aprendendo</h2>
+                    <p>Algumas das tecnologias que venho estudando no curso.</p>
+                </div>
+
                 <div class="cards">
-                    <div class="card1">
-                        <h3>Pedaços de Amor</h3>
-                        <a href="https://pedacosdeamor.carrd.co/" target="_blank">
-                            <img src = "amor.jpg" alt = "foto" class="foto-amor">
-                        </a>
-                        <p>Pedaços de Amor foi desenvolvido na aula de Empreendedorismo em 2024, onde criamos uma brigaderia inspirada na deusa grega Afrodite. Construímos o negócio do zero, incluindo o design, os custos e os lucros, com todos os detalhes cuidadosamente planejados.</p>
-                    </div>
+
                     <div class="card">
-                        <h3>Bibliosesi!</h3>
-                        <a href="https://tamis28.github.io/Bibliosesi/HTML/" target="_blank">
-                            <img src = "Biblio.png" alt = "foto" class="foto-biblio">
-                        </a>
-                        <p>Bibliosesi foi um projeto do SENAI em que desenvolvemos um protótipo de biblioteca virtual para nossa escola, buscando facilitar o acesso aos livros e oferecer funções mais práticas tanto para os alunos quanto para o bibliotecário.</p>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>HTML</h3>
+                        <p>Estruturação e criação de páginas web.</p>
                     </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>CSS</h3>
+                        <p>Estilização, layouts e responsividade.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e lógica para páginas e sistemas.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>SQL</h3>
+                        <p>Criação, organização e consultas em bancos de dados.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <p>Desenvolvimento de aplicações no back-end.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>Git</h3>
+                        <p>Controle de versões e organização dos projetos.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <section id="habilidades">
+
+        <section class="projetos" id="projetos">
             <div class="container">
-                <h2 class="sobre">Habilidades</h2>
-                <div class="hobbies">
-                    <div class="hobby">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <p class="f">Criatividade</p>
-                    </div>
-                    <div class="hobby">
-                       <i class="fa-solid fa-people-group"></i>
-                        <p class="f">Trabalho em grupo</p>
-                    </div>
-                    <div class="hobby">
-                        <i class="fa-solid fa-bolt-lightning"></i>
-                        <p class="f">Proatividade</p>
+
+                <div class="titulo">
+                    <span>PROJETOS</span>
+                    <h2>Trabalho de conclusão de curso</h2>
+                    <p>TCC feito ao decorrer do curso.</p>
+                </div>
+
+                <div class="projetos-grid">
+
+                    <div class="projeto">
+                        <div class="projeto-numero">01</div>
+                        <div class="projeto-conteudo">
+                            <span>DESENVOLVIMENTO WEB</span>
+                            <h3>Biblioteca Virtual - Bibliosesi</h3>
+
+                            <p>
+                                Sistema para organização de livros, cadastro,
+                                catálogo e controle de empréstimos.
+                            </p>
+
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="links">
+                                <a href="https://elisamarielle.github.io/Bibliosesi/HTML/html/" target="_blank" class="projeto-link" >Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="https://github.com/ElisaMarielle/Bibliosesi" target="_blank" class="projeto-link" >Ver no Git <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contato">
-            <div class="contact">
-                <h2>Contato</h2>
-                <div class="contato">
-                    <div class="insta con">
-                        <a href="https://www.instagram.com/jtandello/?next=%2F" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <P>jtandello</P>
+
+        <section class="contato" id="contato">
+            <div class="container contato-grid">
+
+                <form onsubmit="enviarFormulario(event)">
+                    <span>CONTATO</span>
+                    <h2>Entre em contato</h2>
+
+                    <div class="nome-email">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="E-mail" required>
                     </div>
-                    <div class="email con">
+
+                    <input type="text" placeholder="Assunto" required>
+
+                    <textarea placeholder="Mensagem" required></textarea>
+
+                    <button class="btn" type="submit">Enviar Mensagem</button>
+                </form>
+
+                <div class="contato-info">
+                    <span>FALE COMIGO</span>
+                    <h2>Vamos conversar?</h2>
+
+                    <div class="contato-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <P>jtandello@portalsesisp.org.br</P>
+                        <p>jvtandelloo@gmail.com</p>
                     </div>
-                    <div class="telefone con">
-                        <i class="fa-solid fa-phone"></i>
-                        <P>(19) 99176-2312</P>
+
+                    
+                    <a href="https://github.com/JoaoTandello" target="_blank">
+                    <div class="contato-item">
+                        <i class="fa-brands fa-github"></i>
+                        <p>github.com/JoaoTandello</p>
                     </div>
-                    <div class="github con">
-                        <a href="https://github.com/JoaoTandello" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <P>JoaoTandello</P>
-                    </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/jtandello/" target="_blank">
+                        <div class="contato-item">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <p>Instagram</p>
+                        </div>  
+                    </a>
                 </div>
+
             </div>
         </section>
-    </body>
-   
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <h2>João Tandello</h2>
+                <p>Desenvolvimento de Sistemas</p>
+            </div>
+
+        </div>
+
+        <div class="copy">
+            © 2026 João Tandello - Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
