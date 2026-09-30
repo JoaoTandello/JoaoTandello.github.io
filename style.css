@@ -1,4 +1,4 @@
-:root {
+    :root {
     --primary: #5f806f;
     --primary-dark: #3d594c;
     --secondary: #b7cfc2;
@@ -48,7 +48,6 @@ ul {
 }
 
 /* HEADER */
-
 header {
     position: fixed;
     top: 0;
@@ -116,7 +115,6 @@ nav a:hover {
 }
 
 /* HERO */
-
 .hero {
     padding: 160px 0 100px;
     background: var(--background);
@@ -161,7 +159,7 @@ nav a:hover {
     flex-shrink: 0;
 }
 
-.sona{
+.sona {
     animation: pixel 600ms infinite;
 }
 
@@ -204,7 +202,6 @@ nav a:hover {
 }
 
 /* SOBRE */
-
 .sobre {
     padding: 100px 0;
     background: var(--surface);
@@ -264,7 +261,6 @@ nav a:hover {
 }
 
 /* TITULOS */
-
 .titulo {
     text-align: center;
     margin-bottom: 50px;
@@ -280,7 +276,6 @@ nav a:hover {
 }
 
 /* HABILIDADES */
-
 .habilidades {
     padding: 100px 0;
     background: var(--section);
@@ -320,7 +315,6 @@ nav a:hover {
 }
 
 /* PROJETOS */
-
 .projetos {
     padding: 100px 0;
     background: var(--background);
@@ -384,12 +378,13 @@ nav a:hover {
     font-size: .7rem;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
 }
+
 .projeto-link {
     display: inline-block;
     color: var(--primary);
@@ -401,8 +396,139 @@ nav a:hover {
     color: var(--primary-dark);
 }
 
-/* CONTATO */
+/* OUTROS PROJETOS */
+.outros-projetos {
+    margin-top: 45px;
+    padding-top: 10px;
+}
 
+.outros-projetos-titulo {
+    margin-bottom: 20px;
+}
+
+.outros-projetos-titulo span {
+    color: var(--primary);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.outros-projetos-titulo h3 {
+    font-size: 1.5rem;
+    margin-top: 3px;
+}
+
+.projetos-carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.outros-projetos-grid {
+    display: flex;
+    gap: 20px;
+    overflow: visible;
+    transition: transform .4s ease;
+    width: 100%;
+}
+
+.projetos-carrossel {
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.outro-projeto {
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-height: 190px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.outro-projeto:hover {
+    border-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.outro-projeto > span {
+    color: var(--primary);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.outro-projeto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 25px;
+}
+
+.outro-projeto-botoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.outro-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 12px;
+    border-radius: 7px;
+    background: var(--primary);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.outro-btn:hover {
+    background: var(--primary-dark);
+}
+
+.outro-btn.git {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary-dark);
+}
+
+.outro-btn.git:hover {
+    background: var(--secondary);
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--primary-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.seta:hover {
+    background: var(--secondary);
+}
+
+.seta.esquerda {
+    left: 8px;
+}
+
+.seta.direita {
+    right: 8px;
+}
+
+/* CONTATO */
 .contato {
     padding: 100px 0;
     background: var(--surface);
@@ -470,7 +596,6 @@ nav a:hover {
 }
 
 /* FOOTER */
-
 footer {
     background: var(--primary-dark);
     color: #fff;
@@ -523,9 +648,7 @@ footer {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 900px) {
-
     nav {
         display: none;
     }
@@ -552,10 +675,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .outro-projeto {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
 }
 
 @media (max-width: 550px) {
-
     .logo-texto p {
         display: none;
     }
@@ -608,15 +734,29 @@ footer {
         align-items: flex-start;
         gap: 25px;
     }
+
+    .outro-projeto {
+        flex: 0 0 100%;
+    }
+
+    .outro-projeto-botoes {
+        flex-direction: column;
+    }
+
+    .outro-btn {
+        width: 100%;
+    }
 }
 
 @keyframes pixel {
     0% {
         transform: translateY(0) scale(1);
     }
+
     50% {
         transform: translateY(-4px) scale(1.05);
     }
+
     100% {
         transform: translateY(0) scale(1);
     }
